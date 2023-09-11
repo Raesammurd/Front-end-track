@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Page Creation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>My Profile information</h1>
+    <div>
+      <img
+        src="images/img007.jpg"
+        data-testid="slackDisplayImage"
+        alt="Olowookere Rereloluwa"
+        class="displayImg"
+      />
+      <p>
+        Slack ID:
+        <span data-testid="slackUserName">Olowookere Rereloluwa</span>
+      </p>
+      <p data-testid="currentDayOfTheWeek">
+        Current Day of the Week: <span>Monday</span>
+      </p>
+      <p data-testid="currentUTCTime">
+        Current UTC Time: <span id="currentUTCTime"></span>
+      </p>
+      <p data-testid="myTrack">Track: <span>Front-End</span></p>
+      <p data-testid="“githubURL”">
+        GitHub URL:
+        <span
+          ><button data-testid="githubURL" target="_blank">
+            <a
+              href="https://github.com/Raesammurd/Front-end-track.git"
+              target="_blank"
+              rel="noopener noreferrer"
+              >My GitHub Repository</a
+            >
+          </button>
+        </span>
+      </p>
+
+      <script>
+        const da = new Date();
+        document.getElementById("currentUTCTime").innerHTML = da;
+      </script>
+    </div>
+  </body>
+</html>
