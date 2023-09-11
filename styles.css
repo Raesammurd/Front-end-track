@@ -25,12 +25,28 @@ div, h1{
     background-color: rgb(11, 11, 104);
     color: white;
     height: 50px;
-    width: 150px;
+    width: 180px;
     border-radius: 25px;
     border: none;
     cursor: pointer;
   }
   button:hover {
     opacity: 65%;
+    text-decoration: none;
   }
+
+  a {
+    color: blue;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  a:hover {
+    color: white;
+  }
+  
+  a:active {
+    color: blue;
+  }
+  
   
